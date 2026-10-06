@@ -24,26 +24,29 @@
 
         <section>
             <h2>Menu</h2>
+<button onclick="cadastrarBeneficiario()">
+    Cadastrar Beneficiário
+</button>
 
-            <button onclick="mostrarMensagem('Cadastro de Beneficiários')">
-                Beneficiários
-            </button>
+<button onclick="listarBeneficiarios()">
+    Listar Beneficiários
+</button>
 
-            <button onclick="mostrarMensagem('Atividades Sociais')">
-                Atividades
-            </button>
+<button onclick="cadastrarAtividade()">
+    Atividades
+</button>
 
-            <button onclick="mostrarMensagem('Controle de Frequência')">
-                Frequência
-            </button>
+<button onclick="registrarFrequencia()">
+    Frequência
+</button>
 
-            <button onclick="mostrarMensagem('Histórico dos Beneficiários')">
-                Histórico
-            </button>
+<button onclick="visualizarHistorico()">
+    Histórico
+</button>
 
-            <button onclick="mostrarMensagem('Relatórios')">
-                Relatórios
-            </button>
+<button onclick="gerarRelatorio()">
+    Relatórios
+</button>
         </section>
 
         <section>
@@ -60,12 +63,6 @@
         <p>Projeto acadêmico - ADS</p>
         <p>ODS 4 - Educação de Qualidade</p>
     </footer>
-
-    <script>
-        function mostrarMensagem(modulo) {
-            alert("Você selecionou: " + modulo);
-        }
-    </script>
-
+    <script src="script.js"></script>
 </body>
 </html>
