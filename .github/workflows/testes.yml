@@ -1,0 +1,26 @@
+name: Testes automatizados
+
+on:
+  push:
+    branches:
+      - main
+      - revisao-tecnica-mvp
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  testes:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Baixar código
+        uses: actions/checkout@v4
+
+      - name: Configurar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Executar testes com cobertura
+        run: node --test --experimental-test-coverage tests/script.test.mjs
