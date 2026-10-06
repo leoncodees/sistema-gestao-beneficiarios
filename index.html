@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Gestão de Beneficiários</title>
+</head>
+<body>
+
+    <header>
+        <h1>Sistema de Gestão e Acompanhamento</h1>
+        <p>Associação Beneficente Criança Cidadã de Santo André</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Bem-vindo ao sistema</h2>
+            <p>
+                Sistema destinado ao cadastro e acompanhamento
+                de beneficiários e atividades sociais.
+            </p>
+        </section>
+
+        <section>
+            <h2>Menu</h2>
+
+            <button onclick="mostrarMensagem('Cadastro de Beneficiários')">
+                Beneficiários
+            </button>
+
+            <button onclick="mostrarMensagem('Atividades Sociais')">
+                Atividades
+            </button>
+
+            <button onclick="mostrarMensagem('Controle de Frequência')">
+                Frequência
+            </button>
+
+            <button onclick="mostrarMensagem('Histórico dos Beneficiários')">
+                Histórico
+            </button>
+
+            <button onclick="mostrarMensagem('Relatórios')">
+                Relatórios
+            </button>
+        </section>
+
+        <section>
+            <h2>Objetivo do sistema</h2>
+            <p>
+                Facilitar o registro, acompanhamento e organização
+                das informações dos beneficiários atendidos pela
+                Associação Beneficente Criança Cidadã.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Projeto acadêmico - ADS</p>
+        <p>ODS 4 - Educação de Qualidade</p>
+    </footer>
+
+    <script>
+        function mostrarMensagem(modulo) {
+            alert("Você selecionou: " + modulo);
+        }
+    </script>
+
+</body>
+</html>
